@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find Ustad – Landing</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --fu-green: #5b7b5a;
+      --fu-green-dark: #405842;
+      --fu-bg-light: #f5f5f3;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--fu-bg-light);
+    }
+
+    .top-bar {
+      background-color: #e5e7eb;
+      padding: 6px 0;
+      font-size: 0.85rem;
+    }
+
+    .top-search {
+      border-radius: 999px;
+      padding-inline: 12px;
+      font-size: 0.85rem;
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+    }
+
+    .navbar-brand span {
+      color: var(--fu-green);
+      font-weight: 700;
+    }
+
+    .hero-section {
+      padding-top: 40px;
+      padding-bottom: 56px;
+    }
+
+    .hero-card {
+      border-radius: 1.5rem;
+      background: var(--fu-green);
+      color: #ffffff;
+      padding: 24px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -40px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-img-wrap {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      background: #ddd;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      min-height: 260px;
+    }
+
+    .hero-img-wrap img {
+      max-height: 260px;
+      object-fit: cover;
+    }
+
+    .hero-btn {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .icon-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid #d1d5db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      margin-bottom: 8px;
+      font-size: 22px;
+      color: var(--fu-green-dark);
+    }
+
+    .ustad-section {
+      padding-block: 40px;
+      background-color: #ffffff;
+      border-radius: 2rem;
+      margin-bottom: 32px;
+    }
+
+    .ustad-photo-circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #e5e7eb;
+    }
+
+    .ustad-photo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn-outline-green {
+      border-color: var(--fu-green);
+      color: var(--fu-green);
+    }
+
+    .btn-outline-green:hover {
+      background-color: var(--fu-green);
+      color: #ffffff;
+    }
+
+    .service-card {
+      border-radius: 1rem;
+      border: 1px solid #e5e7eb;
+      padding: 24px;
+      background-color: #ffffff;
+      text-align: center;
+      height: 100%;
+    }
+
+    .service-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: var(--fu-green-dark);
+    }
+
+    footer {
+      background-color: #f9fafb;
+      padding-top: 24px;
+      padding-bottom: 16px;
+      font-size: 0.85rem;
+    }
+
+    footer h6 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #4b5563;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 767.98px) {
+      .hero-section {
+        padding-top: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <input
+        type="text"
+        class="form-control form-control-sm top-search me-2"
+        placeholder="Search for a service or venue"
+      />
+      <button class="btn btn-sm btn-outline-dark btn-pill">Login / Register</button>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span>Find Ustad</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="small text-muted d-none d-md-inline">For Businesses</span>
+        <button class="btn btn-sm btn-outline-success btn-pill">Ask Ustad</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <div class="hero-img-wrap">
+            <!-- Ganti src dengan foto ustad asli -->
+            <img src="https://placehold.co/260x260" alt="Ustad hero">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="hero-card">
+            <h6 class="fw-semibold mb-1">
+              Find Ustad: Solusi Kebutuhan Dakwah Anda
+            </h6>
+            <h4 class="fw-bold mb-2">
+              Reservasi Ustad Mudah dan Cepat!
+            </h4>
+            <p class="mb-3 small">
+              Dapatkan kebutuhan dakwah terpenuhi! Temukan solusi ideal dengan Find Ustad.
+              Reservasi ustad untuk kajian, dakwah, konseling, dan belajar Al-Qur’an secara praktis.
+            </p>
+            <button
+              class="btn btn-warning btn-pill hero-btn"
+              onclick="window.location.href='reservation-layanan.html';"
+            >
+              Reservasi Ustad
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MASALAH SECTION -->
+      <div class="text-center mt-5 mb-4">
+        <h5 class="section-title">Masalah yang ingin kita atasi</h5>
+      </div>
+      <div class="row text-center g-4 mb-5">
+        <div class="col-md-4">
+          <div class="icon-circle">
+            <span class="bi bi-geo-alt"></span>
+          </div>
+          <p class="fw-semibold mb-1">Aksesibilitas Ustad</p>
+          <p class="small text-muted mb-0">
+            Membantu menemukan ustad yang dekat dengan lokasi kegiatanmu.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-circle">
+            <span class="bi bi-mortarboard"></span>
+          </div>
+          <p class="fw-semibold mb-1">Kompetensi Ustad</p>
+          <p class="small text-muted mb-0">
+            Menyajikan profil dan kompetensi ustad secara transparan.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-circle">
+            <span class="bi bi-people"></span>
+          </div>
+          <p class="fw-semibold mb-1">Pilihan Ustad</p>
+          <p class="small text-muted mb-0">
+            Memberi berbagai pilihan ustad sesuai kebutuhan dan tema dakwah.
+          </p>
+        </div>
+      </div>
+
+      <!-- USTAD PILIHAN -->
+      <div class="ustad-section px-3 px-md-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <h5 class="mb-2">Ustad Pilihan</h5>
+            <h6 class="fw-semibold mb-1">Ustad Khalid Basalamah</h6>
+            <p class="small text-muted mb-3">
+              Ustadz Khalid Basalamah Lc., M.A. yang juga memiliki gelar doktor ini berasal dari
+              Makassar dan merupakan pendakwah lulusan S3 Universitas Tun Abdul Razak Malaysia.
+              Ia pernah menjalani pendidikan di Arab Saudi dan berkuliah di Universitas Islam Madinah
+              untuk mendapatkan gelar S1.
+            </p>
+            <button class="btn btn-outline-green btn-pill">
+              Selengkapnya
+            </button>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="ustad-photo-circle mx-auto">
+              <img src="https://placehold.co/400x400" alt="Foto Ustad Khalid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAYANAN KAMI -->
+      <div class="mt-4">
+        <h5 class="section-title text-center mb-4">Layanan Kami</h5>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">🕌</div>
+              <h6 class="fw-semibold mb-2">Ustad</h6>
+              <p class="small text-muted mb-0">
+                Reservasi ustad untuk kajian umum, khutbah, atau acara keagamaan lainnya.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">💬</div>
+              <h6 class="fw-semibold mb-2">Konseling</h6>
+              <p class="small text-muted mb-0">
+                Layanan konseling dan konsultasi islami, secara personal maupun kelompok.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">📖</div>
+              <h6 class="fw-semibold mb-2">Belajar Al-Qur’an</h6>
+              <p class="small text-muted mb-0">
+                Bimbingan membaca dan memahami Al-Qur’an dengan ustad yang kompeten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-4">
+          <h6>Find Ustad</h6>
+          <p class="mb-1">Platform reservasi ustad untuk berbagai kebutuhan dakwah.</p>
+          <p class="mb-0">© 2022 thecreation.design – Created with love by thecreation.design</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Company</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Rental Guides</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contact Info</h6>
+          <p class="mb-1">Location: 100 Smart Street, LA, USA</p>
+          <p class="mb-1">Phone: 1234567890</p>
+          <p class="mb-0">Email: company@email.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
